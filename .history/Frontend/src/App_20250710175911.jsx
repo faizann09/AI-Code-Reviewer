@@ -23,7 +23,7 @@ function App() {
       const response = await axios.post('https://ai-code-reviewer-f648.onrender.com/ai/getReview', { code });
       setReview(response.data);
     } catch (err) {
-      setReview(" Error fetching review. Make sure backend is running and CORS is enabled.");
+      setReview("❌ Error fetching review. Make sure backend is running and CORS is enabled.");
     }
   }
 
